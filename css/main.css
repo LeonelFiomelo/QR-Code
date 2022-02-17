@@ -1,53 +1,79 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #0e2549;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
 }
 
 .container {
-  height: 100vh;
+  background: #3a6186;
+  background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+  background: linear-gradient(to right, #89253e, #3a6186);
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
 }
-.container .card {
-  width: 22rem;
+
+.card {
   height: 30rem;
-  background-color: #FFF;
+  width: 22rem;
+  padding: 0.4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  border-radius: 1rem;
-  box-shadow: 14px 14px 30px 1px #140f0790;
+  border-radius: 2rem;
+  box-shadow: 0 12px 30px 1px #00000080;
+  background-color: #fff;
 }
-.container .card .card__code {
+.card__code {
   padding: 1.2rem;
-  background-color: #64a3fe;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
+  background-color: #213154;
 }
-.container .card .card__code .card__qr {
+.card__code-qr {
   width: 16rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
-.container .card .card__text {
+.card__text {
   width: 80%;
-  color: #140f07;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  color: #213154;
 }
-.container .card .card__text .card__title {
+.card__text-h1 {
   padding: 0 0 1rem;
 }
 
